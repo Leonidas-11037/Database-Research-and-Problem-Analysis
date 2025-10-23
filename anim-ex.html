@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-     Protip: use <span> on text </span> within <p> elements with attributes to change its look.
-    -->
+
     <head>
         <!-- What's in the <head> element is a "meta" area not for display. 
             It holds important information about the website's contents.
             The text inside the <title> element does show in the top tab of a web browser. 
              The <head> is where we will include info about styling the site, too. -->
-        <title>Introduction</title>
+        <title>Reflection</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-        <!-- This code below is called CSS: It stands for Cascading Stylesheets -->
+        <!-- Here is a place where we can add a little styling code called CSS to this page. -->
+        
+        <script type="text/javascript" src="second-js.js">/**/</script>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
                            :root{
@@ -74,32 +69,31 @@
                 transform-origin:center;
                 transform:scale(140%);
             }
-            <!-- Use id="name" for referencing ^ -->
         </style>
     </head>
     <body>
         <nav class="top">
-            <a href="index.html">Home Page</a>
-        </nav>
-        <p/>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <section class="inner1"><h1>Introduction to Databases</h1>
-</section>
-        <section class="inner1">
-            <p>This project was made possible due to archiving works on the internet and storing captures in a Zotero group. Said <a href="https://www.zotero.org/groups/6195143/d4_lhk_data_and_communication-karmer/library">Zotero library which is located here.</a></p>
-            <p>Databases are an integral part of technology today as the ability to store an gargantuan ammount of raw information and process it without a dedicated hall of filing cabinets sure makes things convienient in the workspace. Even smaller ones for research or a personal project </p>
-            <h2>Use SVG Diagram to animate a 2D database model on hover. Reference the image folder</h2>
-        <h2>Common Problems</h2>
 
-        </section>
-        <p/>
-        <section class="inner1">
-        <h2>Possible Solutions</h2>
-        </section>
+        </nav>
+        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
+        <h1>SVG Practice</h1>
         
-<section class="inner1">
-    <h2>Emerging Technologies and AI</h2>
-</section>
-    </body>
-    <!--  -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="-100 0 750 750" fill="none">
+            <desc></desc>
+            <g alignment-baseline="baseline"></g>
+            
+            <circle id="blueCircle" cx="190" cy="210" r="100"/> 
+            <rect id="Redrect" height="100" width="200" x="100" stroke="white" fill="red" stroke-width="4">
+                
+                <animate attributeName="width" values="200;400;200" dur="4s" repeatCount="indefinite"></animate>
+                
+                <animate attributeName="y" dur="4s" repeatCount="indefinite" from="0" to="200"></animate>
+            </rect>
+            <ellipse id="limed" cx="170" cy="158" rx="40" ry="60" stroke-width="3" fill="transparent"/>
+            <path id="swerved" d="M10,63 Q40,85 60,60 T105,63" stroke-width="5"/>
+
+        </svg>
+
+
+        </body>
 </html>
